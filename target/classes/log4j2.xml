@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="debug">
+       <appenders>
+        <!--这个输出控制台的配置-->
+        <Console name="STDOUT" >
+             <!--控制台只输出level及以上级别的信息（onMatch），其他的直接拒绝（onMismatch）-->
+            <ThresholdFilter level="debug" onMatch="ACCEPT" onMismatch="DENY" />
+            <!-- 输出日志的格式-->
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level [%logger{50}:%L]   [%X{X-B3-TraceId},%X{X-B3-SpanId}] - %msg%n" charset="UTF-8"/>
+        </Console>
+
+        <RollingRandomAccessFile name="FILE-INFO" fileName="logs/limit-way-info.log"
+            filePattern="logs/limit-way-info.%d{yyyy-MM-dd-HH}.log">
+            <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY" />
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level [%logger{50}:%L] %tcid  [%X{X-B3-TraceId},%X{X-B3-SpanId}] - %msg%n" charset="UTF-8" />
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="30 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="1"  >
+               <Delete basePath="logs" maxDepth="2">
+                    <IfFileName glob="*limit-way-info.*.log" />
+                    <IfLastModified age="7d" />
+               </Delete>
+            </DefaultRolloverStrategy>
+        </RollingRandomAccessFile>
+
+    </appenders>
+
+    <loggers>
+        <AsyncRoot level="INFO" includeLocation="true" >
+            <AppenderRef ref="FILE-INFO" />
+            <AppenderRef ref="STDOUT" />
+        </AsyncRoot>
+    </loggers>
+</configuration>
