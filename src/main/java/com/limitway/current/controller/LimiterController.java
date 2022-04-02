@@ -52,6 +52,19 @@ public class LimiterController {
 
         return ATOMIC_INTEGER_3.incrementAndGet();
     }
+    
+     /**
+     * @author fu
+     * @description
+     * @date 2020/4/8 13:42
+     */
+    @Limit(key = "test_test", period = 10, count = 3, limitType = LimitType.IP)
+    @GetMapping("/test_test")
+    @ResponseBody
+    public int testTest() {
+
+        return ATOMIC_INTEGER_3.incrementAndGet();
+    }
 
 }
 
