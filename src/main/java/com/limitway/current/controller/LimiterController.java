@@ -49,11 +49,12 @@ public class LimiterController {
     @GetMapping("/limitTest3")
     @ResponseBody
     public int testLimiter3() {
-        System.out.println("233d213");
-        System.out.println("222d213");
-        System.out.println("233d313");
+
+        System.out.println("23321asd3");
+        System.out.println("22221asd3");
+        System.out.println("2333sad13");
         System.out.println("11111111");
-        System.out.println("2222d33213");
+        System.out.println("22223ad3213");
         return ATOMIC_INTEGER_3.incrementAndGet();
     }
     
