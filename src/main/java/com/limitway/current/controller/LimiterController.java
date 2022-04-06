@@ -50,6 +50,7 @@ public class LimiterController {
     @ResponseBody
     public int testLimiter3() {
         System.out.println("123123123");
+        System.out.println("11111111");
         return ATOMIC_INTEGER_3.incrementAndGet();
     }
     
