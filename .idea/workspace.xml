@@ -52,11 +52,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-<<<<<<< Updated upstream
-          <entry key="JAVA" value="1791" />
-=======
+
           <entry key="JAVA" value="1756" />
->>>>>>> Stashed changes
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="Properties" value="28" />
           <entry key="XML" value="96" />
@@ -127,13 +124,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/limitway/current/controller/LimiterController.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-            <state relative-caret-position="423">
-              <caret line="55" column="39" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
-=======
             <state relative-caret-position="408">
               <caret line="54" column="41" lean-forward="true" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
->>>>>>> Stashed changes
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#870#871#0" expanded="true" />
@@ -467,11 +459,8 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< Updated upstream
-    <option name="totallyTimeSpent" value="36772000" />
-=======
+
     <option name="totallyTimeSpent" value="36596000" />
->>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -770,13 +759,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/limitway/current/controller/LimiterController.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-        <state relative-caret-position="423">
-          <caret line="55" column="39" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
-=======
         <state relative-caret-position="408">
           <caret line="54" column="41" lean-forward="true" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
->>>>>>> Stashed changes
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#870#871#0" expanded="true" />
