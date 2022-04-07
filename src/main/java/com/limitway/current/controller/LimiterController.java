@@ -49,6 +49,7 @@ public class LimiterController {
     @GetMapping("/limitTest3")
     @ResponseBody
     public int testLimiter3() {
+
         System.out.println("2332a1asd3");
         System.out.println("22221a2sd3");
         System.out.println("233a3sad13");
