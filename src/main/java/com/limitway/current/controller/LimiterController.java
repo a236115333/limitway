@@ -51,10 +51,10 @@ public class LimiterController {
     public int testLimiter3() {
 
         System.out.println("23321asd3");
-        System.out.println("22221a2sd3");
-        System.out.println("2333sad13");
+        System.out.println("22222sd3");
+        System.out.println("2333d13");
         System.out.println("111112s111");
-        System.out.println("222232ad3213");
+        System.out.println("2222d3213");
         return ATOMIC_INTEGER_3.incrementAndGet();
     }
     
