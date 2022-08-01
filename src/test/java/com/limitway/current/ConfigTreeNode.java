@@ -1,4 +1,4 @@
-package com.sgit.ois.pm.st.vo.config;
+package com.limitway.current;
 
 import java.util.List;
 
@@ -11,13 +11,32 @@ import java.util.List;
  */
 public class ConfigTreeNode {
 	
-	
+
 	private List<ConfigTreeNode> children;
 	
 	/**
 	 * 主键id
 	 */
 	private String id;
+
+	@Override
+	public String toString() {
+		return "ConfigTreeNode{" +
+				"children=" + children +
+				", id='" + id + '\'' +
+				", parent='" + parent + '\'' +
+				", text='" + text + '\'' +
+				", type='" + type + '\'' +
+				", code='" + code + '\'' +
+				", state=" + state +
+				", codeType='" + codeType + '\'' +
+				", paramName1='" + paramName1 + '\'' +
+				", paramName2='" + paramName2 + '\'' +
+				", paramName3='" + paramName3 + '\'' +
+				", paramName4='" + paramName4 + '\'' +
+				'}';
+	}
+
 	/**
 	 * 父类id
 	 */
