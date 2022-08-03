@@ -50,7 +50,7 @@ public class LockController {
     @GetMapping("park")
     public String park() throws InterruptedException {
         RSemaphore park = redissonClient.getSemaphore("park");
-        park.acquire();
+//        park.acquire();
 
         return "ok";
     }
