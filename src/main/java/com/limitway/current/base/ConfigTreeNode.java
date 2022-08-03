@@ -1,4 +1,4 @@
-package com.limitway.current;
+package com.limitway.current.base;
 
 import java.util.List;
 

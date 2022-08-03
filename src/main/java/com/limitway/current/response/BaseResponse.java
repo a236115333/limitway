@@ -1,6 +1,6 @@
-package com.crawl.response;
+package com.limitway.current.response;
 
-import com.crawl.common.Constants;
+import com.limitway.current.common.Constants;
 import lombok.Data;
 
 /**

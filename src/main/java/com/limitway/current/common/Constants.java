@@ -1,6 +1,6 @@
 package com.limitway.current.common;
 
-public class Contstants {
+public class Constants {
 
     // 请求处理成功
     public static final Integer RESPONSE_CODE_OK = 200;
